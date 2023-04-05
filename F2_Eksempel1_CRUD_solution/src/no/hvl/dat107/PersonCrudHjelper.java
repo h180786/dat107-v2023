@@ -14,8 +14,7 @@ public class PersonCrudHjelper implements PersonCrudInterface {
 	private EntityManagerFactory emf;
 	
 	public PersonCrudHjelper() {
-		emf = Persistence.createEntityManagerFactory("personPersistenceUnit", 
-				Map.of("jakarta.persistence.jdbc.password", Passwords.AZURE_PASSWORD));
+		emf = Persistence.createEntityManagerFactory("personPersistenceUnit");
 	}
 	
 	@Override
